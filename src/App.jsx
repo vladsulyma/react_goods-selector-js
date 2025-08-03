@@ -16,7 +16,7 @@ export const goods = [
 ];
 
 export const App = () => {
-  const [selectedGood, setValue] = useState(goods.indexOf('Jam'));
+  const [selectedGood, setValue] = useState('Jam');
 
   return (
     <main className="section container">
@@ -31,7 +31,7 @@ export const App = () => {
             data-cy="ClearButton"
             type="button"
             className="delete ml-3"
-            onClick={() => setValue(null)}
+            onClick={() => setValue('')}
           />
         </h1>
       )}
